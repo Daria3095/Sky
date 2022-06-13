@@ -1,0 +1,104 @@
+.footer {
+    padding: 1rem 0;
+    width: 100%;
+    background-color: $color-blue;
+    color: $color-white;
+    font-weight: 500;
+
+    &__icons {
+        display: flex;
+        
+        gap: 15px;
+        padding: 1.5rem 0;
+    }
+
+    &__description,
+    &__icons-2 {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__lists {
+        display: flex;
+        height: 20px;
+        padding: .1rem;
+
+        gap: 10px;
+        justify-content: space-between;
+    }
+   
+    &__list {
+        display: inline-block;
+        padding: .4rem;
+        list-style: none;
+    }
+      
+    &__link {
+        text-decoration: none;
+        transition: all .65s;
+        color: $color-white;
+    }
+        
+    &__link:hover {
+        color: $color-red;
+        text-decoration: none;
+    }
+
+    &__card-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &__card-nav-1,
+        &__card-nav-2,
+        &__card-nav-3 {
+            color: $color-black;
+            font-size: 14px;
+            padding: 1rem 0;
+        }
+
+        .card-nav__list {
+            display: inline-block;
+            padding: .4rem;
+            list-style: none;
+        }
+
+        .card-nav__lists {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+        
+        .card-nav__link {
+            text-decoration: none;
+            transition: all .65s;
+            color: $color-black;
+        }
+
+        .card-nav__link-bold {
+            text-decoration: none;
+            transition: all .65s;
+            color: $color-black;
+            font-weight: 900;
+        }
+            
+        .card-nav__link:hover {
+            color: $color-red;
+            text-decoration: none;
+        }
+    }
+
+    &__logo {
+        padding: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__description-caps,
+    &__description .description__caps {
+        text-transform:uppercase;
+    }
+}
+   

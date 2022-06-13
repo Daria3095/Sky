@@ -1,0 +1,431 @@
+.swiper {
+    width: 100%;
+    height: auto;
+} 
+
+
+
+.filters-menu {
+    position: relative;
+    
+    display: flex;
+    
+    .filters {
+        
+        &__title {
+            padding: 10px;
+            font-size: 32px;
+        }
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } 
+    
+    .catalog-row {
+        padding: 2rem;    
+        width: 100%;
+    }
+
+    .form {
+        padding-right: 2rem;
+    }
+
+    .multiselect {
+        width: 260px;
+        height: auto;
+        margin: 1.5rem;
+    }
+    
+    .selectBox {
+        position: relative;
+    }
+    
+    .selectBox select {
+        width: 100%;
+        font-weight: 700;
+        font-size: 16px;
+        border: none;
+    }
+    
+    .overSelect {
+        position: absolute;
+        
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    
+    #checkboxes,
+    #checkboxes0, 
+    #checkboxes1,
+    #checkboxes2,
+    #checkboxes3,
+    #checkboxes4, 
+    #checkboxes5,
+    #checkboxes6 {
+        display: none;   
+    }
+    
+    #checkboxes label,
+    #checkboxes0 label,
+    #checkboxes1 label,
+    #checkboxes2 label,
+    #checkboxes3 label,
+    #checkboxes4 label,
+    #checkboxes5 label,
+    #checkboxes6 label {
+        display: block;
+        margin: 1.5rem;
+        font-size: 16px;
+        color: $color-gray-dark;
+    }
+    
+    #checkboxes label:hover,
+    #checkboxes0 label:hover,  
+    #checkboxes1 label:hover,
+    #checkboxes2 label:hover,
+    #checkboxes3 label:hover,
+    #checkboxes4 label:hover,
+    #checkboxes5 label:hover,
+    #checkboxes6 label:hover  {
+        background-color: $color-gray;
+    }
+
+    .text__input {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid $color-gray-dark;
+
+        color: $color-black;
+        font-size: 16px;
+        font-weight: 700;
+
+    }
+
+   
+    .catalog-row {
+        padding-right: 0;
+        padding-left: 0;
+    
+        .card {
+            position: relative;
+
+            .lists-down {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            
+                width: auto;
+                height: 40px;
+                padding: .2rem;
+                border: 2px solid $color-gray;
+                font-size: 16px;
+                color: $color-black;
+                background-color: $color-white;
+                border-radius: 6px;
+            }
+            
+            
+            &__body {
+                padding-top: 4.25rem;
+                
+                white-space: normal;
+                    
+                display: inline-block;
+                vertical-align: top;
+                justify-content: center;
+            }
+
+            &__row {
+                display: inline-block;
+                border-radius: 10px;
+                margin-right: 2.2rem;
+
+                padding-bottom: 1rem;
+
+                max-width: 274px;
+                height: auto;
+                
+                transition: .3s ease-in;
+            }
+
+            &__image {
+                margin: 0;
+                
+                .image {
+                    justify-content: center;
+                    
+                    border-radius: 10px 10px 0px 0px;
+                }
+            }
+
+            .description__bold {
+                color: $color-black;
+                font-weight: 900;
+            }   
+            
+            &__description {
+                color: $color-gray-dark;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                
+                min-height: 50px;
+            }
+
+
+            &__price1 {
+                color: $color-black;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 20px;
+            }
+
+            &__price2 {
+                color: $color-gray-dark;
+                font-style: normal;
+                text-decoration: line-through;
+                font-weight: 500;
+                font-size: 20px;
+            }
+
+
+            &__links {
+                display: flex;
+            
+                justify-content: space-between;
+                align-items: center; 
+            }
+
+            .description__caps-bold {
+                font-weight: 900;
+                font-size: 20px;
+                text-transform:uppercase;
+                text-align: center;
+                justify-content: center;
+                margin-bottom: 0;
+            }
+
+            .description__caps {
+                font-size: 14px;
+                font-weight: 900;
+                text-transform:uppercase;
+                text-align: center;
+                justify-content: center;
+                margin-top: 0;
+            }
+            
+            .description__link {
+                text-align: center;
+            }
+
+            .text__link {
+                color: $color-black;
+                text-align: center;
+                justify-content: center;
+                margin: 0;
+            } 
+        }
+    }
+}   
+
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+   .page-down {
+        width: auto;
+        height: 40px;
+        padding: .2rem;
+        border: 2px solid $color-gray;
+        font-size: 16px;
+        color: $color-black;
+        background-color: $color-white;
+        border-radius: 6px;
+    }
+    
+    &__text {
+      color: $color-gray;
+    }
+}
+
+.sliders {
+    display: flex;
+    justify-content: center;
+
+    border-top: 2px solid $color-gray;
+    
+    &__title {
+        position: absolute;
+        justify-content: center;
+        text-align: center;
+        
+        font-weight: 900;
+    }
+
+    &__menu {
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .card-2 {
+        white-space: normal; 
+        display: inline-block;
+        vertical-align: top;
+        justify-content: center;
+
+        padding-top: 4.5rem;
+        padding-bottom: 2.5rem;
+
+        &__row {
+            display: inline-block;
+            border-radius: 10px;
+            border: 2px solid $color-gray;
+            margin-right: 2.5rem;
+    
+            padding-bottom: 1rem;
+    
+            max-width: 256px;
+            height: auto;
+            
+            transition: .3s ease-in;
+        }
+
+        &__image {
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+        
+            .image-2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 2rem;
+                
+                border-radius: 10px 10px 0px 0px;
+            }
+        }
+
+        &__description {
+            margin: 1rem;
+            min-height: 10px;
+            min-width: 100px;
+            text-align: left;
+
+            .description-1  {
+                min-height: 68px;
+            }
+
+            .description-2, 
+            .description-3 {
+                color: $color-black;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+            }
+        }
+        
+
+        &__links {
+            display: flex;
+    
+            justify-content: space-between;
+            align-items: center; 
+        }
+
+        &__price {
+            color: $color-black;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 20px;
+            min-width: 100px;
+            margin: 1rem;
+        }
+    } 
+}
+
+.help {
+    justify-content: center;
+    position: relative;
+    text-align: center;
+
+    border-top: 2px solid $color-gray;
+
+    &__card-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        margin: 2.5rem;
+    }
+
+    &__title,
+    &__tel {
+        text-align: center;
+
+        color: $color-black;
+        font-size: 16px;
+        font-weight: 900;
+    }
+
+    &__description {
+        color: $color-black;
+        font-size: 16px;
+    }
+    
+    &__btn-text {
+        color: $color-white;
+        font-size: 16px;
+        font-weight: 900;
+    }
+}
+
+
+.email {
+  border: none;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+
+    &__input {
+        border-radius: 5px;
+        margin: 0;
+    }
+
+  &__info {
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center
+   }
+   
+   &__info label {
+        text-align: left;
+        color: $color-black;
+        display: block;
+        margin-bottom: 28px;
+   }
+   
+   &__info input {
+        background: $color-white;
+        border: 1px solid $color-gray;
+        color: $color-black;
+        padding: 18px;
+        margin-top: 6px;
+        width: 100%;
+   }
+   
+}
+
+
+
+
