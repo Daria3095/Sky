@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/font.css">
 
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
 </head>
 
 <body>
@@ -29,7 +33,9 @@
                     </div>
     
                     <div class="search">
-                        <input class="search__input" type="serch" placeholder="Search brands, gear and guides">
+                        <form>
+                          <input class="search__input" type="serch" placeholder="Search brands, gear and guides">
+                        </form>
                     </div>
                     
                     <div class="client">
@@ -38,13 +44,16 @@
                             <img src="./img/icons/en.png" class="lang" alt="lang__image"> 
                         </div>
     
-                        <div class="client__account account">
-                            <div class="account__title">My account <i class="down__arrow"></i></div>
-                        </div>
-    
-                        <div class="client__cashe cashe">
-                            <div class="cashe__title">USD<i class="down__arrow"></i></div>
-                        </div>
+                        <select class="list-down__account"> 
+                            <option class="account__title" selected>My account</option>
+                        </select>
+
+                        <select class="list-down__cashe"> 
+                            <option class="cashe__title" selected>USD</option>
+                            <option class="cashe__title">EUR</option>
+                            <option class="cashe__title">BLR</option>
+                            <option class="cashe__title">RUB</option>
+                        </select>
     
                         <div class="client__busket busket">
                             <img src="./img/icons/busket.png" alt="busket" class="busket__image"> 
@@ -57,9 +66,7 @@
         <div class="header__navigation container">
             <nav class="navigation">
                 <ul class="navigation__lists">
-                    
                     <li class="navigation__list"><a class="btn__blue" href="#"><img class="icon__menu" src="./img/icons/меню.png" alt="Picture">Categories</a></li>
-                    
 
                     <li class="navigation__list"><a class="navigation__link" href="#">Ski boots</a></li>
                     <li class="navigation__list"><a class="navigation__link" href="#">Ski accessories</a></li>
@@ -72,18 +79,18 @@
         </div>
 
         <div class="header__banner banner">
-            <h1 class="banner__title">New <span class="big__title">Atomic</span> collection with nano-techs.</h1>
-            <h3 class="banner__description">Check our new 2021 collection for freeride.</h3>
-           
-            <div class="banner__links">
-                <a href="#" class="btn__white">Button</a>
-            </div>
 
+            <div class="container">
+                <h1 class="banner__title">New <span class="big__title">Atomic</span> collection with nano-techs.</h1>
+                <h3 class="banner__description">Check our new 2021 collection for freeride.</h3>
+            
+                <div class="banner__links">
+                    <a href="#" class="btn__white">Button</a>
+                </div>
+            </div>
        </div>
 
     </header> 
-
-    <main class="wrapper">
 
     <section class="filters-menu container">   
         <div class="filters-checkbox">
@@ -222,7 +229,7 @@
                     <p class="menu__description">170 Matches found</p>
 
                     <select class="lists-down">
-                        <option selected><span class="span">Viesssw</span> 9</option>
+                        <option selected><span class="span">View</span> 9</option>
                         <option>View 12</option>
                     </select>
 
@@ -235,7 +242,7 @@
                 <div class="card__body">
                     <div class="card__row">
                         <div class="card__image">
-                            <img class="image" src="./img/icons/Лыжи_6.png" alt="Picture">
+                            <img class="image" src="./img/Лыжи_6.png" alt="Picture">
                         </div>
 
                         <p class="card__description"><span class="description__bold">Niche:</span> Nightshade Snowboard - Women's - 2019/2020</p>
@@ -255,7 +262,7 @@
 
                     <div class="card__row">
                         <div class="card__image">
-                            <img class="image" src="./img/icons/Лыжи_3.png" alt="Picture">
+                            <img class="image" src="./img/Лыжи_3.png" alt="Picture">
                         </div>
 
                         <p class="card__description"><span class="description__bold">Weston: </span>  Backwoods Snowboard - 2020/2021</p>
@@ -273,7 +280,7 @@
                     </div>
                     <div class="card__row">
                         <div class="card__image">
-                            <img class="image" src="./img/icons/Лыжи_2.png" alt="Picture">
+                            <img class="image" src="./img/Лыжи_2.png" alt="Picture">
                         </div>
 
                         <p class="card__description"><span class="description__bold">Niche:</span> Nightshade Snowboard - Women's - 2019/2020.</p>
@@ -289,12 +296,11 @@
                             </div>
                      </div>       
                  </div>
-              </div>
 
-             <div class="card__body">
-                    <div class="card__row">
+
+                 <div class="card__row">
                         <div class="card__image">
-                            <img class="image" src="./img/icons/Лыжи_6.png" alt="Picture">
+                            <img class="image" src="./img/Лыжи_6.png" alt="Picture">
                         </div>
 
                         <p class="card__description"><span class="description__bold">Niche:</span> Nightshade Snowboard - Women's - 2019/2020</p>
@@ -309,12 +315,12 @@
                                 <img class="image" src="./img/icons/Star (1).png" alt="Picture">
                                 <img class="image" src="./img/icons/Star.png" alt="Picture">
                             </div>
-                     </div>       
+                        </div>       
                     </div>
 
                     <div class="card__row">
                         <div class="card__image">
-                            <img class="image" src="./img/icons/Лыжи_3.png" alt="Picture">
+                            <img class="image" src="./img/Лыжи_3.png" alt="Picture">
                         </div>
 
                         <p class="card__description"><span class="description__bold">Weston:</span> Backwoods Snowboard - 2020/2021.</p>
@@ -333,7 +339,7 @@
 
                     <div class="card__row">
                         <div class="card__image">
-                            <img class="image" src="./img/icons/Лыжи_2.png" alt="Picture">
+                            <img class="image" src="./img/Лыжи_2.png" alt="Picture">
                         </div>
 
                         <p class="card__description"><span class="description__bold">Niche:</span> Nightshade Snowboard - Women's - 2019/2020</p>
@@ -348,13 +354,11 @@
                                 <img class="image" src="./img/icons/Star.png" alt="Picture">
                             </div>
                         </div>       
-                 </div>
-             </div>
+                    </div>
 
-                <div class="card__body">
                     <div class="card__row">
                         <div class="card__image">
-                            <img class="image" src="./img/icons/Лыжи_4.png" alt="Picture">
+                            <img class="image" src="./img/Лыжи_4.png" alt="Picture">
                         </div>
 
                         <p class="description__bold">Jones</p>
@@ -374,7 +378,7 @@
 
                     <div class="card__row">
                         <div class="card__image">
-                            <img class="image" src="./img/icons/Лыжи_5.png" alt="Picture">
+                            <img class="image" src="./img/Лыжи_5.png" alt="Picture">
                         </div>
 
                         <p class="description__bold">Burton</p> 
@@ -393,7 +397,7 @@
                     </div>
                     <div class="card__row">
                         <div class="card__banner">
-                            <img class="image" src="./img/icons/баннер.png" alt="Picture">
+                            <img class="image" src="./img/баннер.png" alt="Picture">
                         </div>
 
                         <p class="description__caps-bold">Evo Trip</p>
@@ -402,7 +406,7 @@
                             <a href="#" class="text__link">Travel with Us</a> 
                         </div>  
                     </div>
-                </div>
+              </div>
          </div> 
 
             <div class="page">
@@ -442,14 +446,14 @@
  <section class="sliders container">
      <h1 class="sliders__title">Best Sellers</h1>
 
-     <div class="sliders__menu">
-        <div class="swiper">
-            <div class="swiper-wrapper">
+
+     <div class="swiper">
+            <div class="swiper-wrapper container-1">
                 <div class="swiper-slide">
                     <div class="card-2">
                         <div class="card-2__row">
                             <div class="card-2__image">
-                                <img class="image-2" src="./img/icons/шлем.png" alt="Picture">
+                                <img class="image-2" src="./img/шлем.png" alt="Picture">
                             </div>
                             
                             <div class="card-2__description">
@@ -463,11 +467,11 @@
 
                         <div class="card-2__row">
                             <div class="card-2__image">
-                                <img class="image-2" src="./img/icons/товар_1.png" alt="Picture">
+                                <img class="image-2" src="./img/товар_1.png" alt="Picture">
                             </div>
 
                             <div class="card-2__description">
-                                <p class="description-2">Rossignol</p>
+                                <p class="description-4">Rossignol</p>
                                 <span class="description-3">EVO 70 Ski Boots</span>
                             </div>
 
@@ -478,7 +482,7 @@
 
                         <div class="card-2__row">
                             <div class="card-2__image">
-                                <img class="image-2" src="./img/icons/товар_2.png" alt="Picture">
+                                <img class="image-2" src="./img/товар_2.png" alt="Picture">
                             </div>
 
                             <div class="card-2__description">
@@ -493,7 +497,7 @@
 
                         <div class="card-2__row">
                             <div class="card-2__image">
-                                <img class="image-2" src="./img/icons/лыжи_1.png" alt="Picture">
+                                <img class="image-2" src="./img/лыжи_1.png" alt="Picture">
                             </div>
 
                             <div class="card-2__description">
@@ -508,7 +512,10 @@
                     </div>       
                 </div>  
             </div>
-        </div>  
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+      </div>       
  </section>
 
   <section class="help container">
@@ -528,7 +535,7 @@
 
                 <form class="email">
                     <fieldset class="email__info">
-                      <label>
+                      <label class="email__title">
                         Email Address
                         <input type="email" name="email" class="email__input">
                       </label>
@@ -628,9 +635,6 @@
   
  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
  <script type="module" src="./js/swiper.js"></script>
-    
+
 </body>
-
-
-
 </html>

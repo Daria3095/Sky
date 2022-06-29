@@ -3,11 +3,8 @@
     height: auto;
 } 
 
-
-
 .filters-menu {
     position: relative;
-    
     display: flex;
     
     .filters {
@@ -15,6 +12,7 @@
         &__title {
             padding: 10px;
             font-size: 32px;
+            margin-left: 1rem;
         }
     }
 
@@ -22,6 +20,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-right: 2rem;
     } 
     
     .catalog-row {
@@ -107,7 +106,6 @@
 
     }
 
-   
     .catalog-row {
         padding-right: 0;
         padding-left: 0;
@@ -129,8 +127,7 @@
                 background-color: $color-white;
                 border-radius: 6px;
             }
-            
-            
+                        
             &__body {
                 padding-top: 4.25rem;
                 
@@ -234,7 +231,6 @@
     }
 }   
 
-
 .page {
     display: flex;
     justify-content: center;
@@ -276,7 +272,6 @@
         align-items: center;
     }
 
-
     .card-2 {
         white-space: normal; 
         display: inline-block;
@@ -286,6 +281,7 @@
         padding-top: 4.5rem;
         padding-bottom: 2.5rem;
 
+       
         &__row {
             display: inline-block;
             border-radius: 10px;
@@ -294,7 +290,7 @@
     
             padding-bottom: 1rem;
     
-            max-width: 256px;
+            width: 20%;
             height: auto;
             
             transition: .3s ease-in;
@@ -304,6 +300,9 @@
             margin: 0;
             justify-content: center;
             align-items: center;
+
+            width: 100%;
+            height: 100%;
         
             .image-2 {
                 display: flex;
@@ -322,7 +321,8 @@
             text-align: left;
 
             .description-1  {
-                min-height: 68px;
+                min-height: 60px;
+                font-size: 16px;
             }
 
             .description-2, 
@@ -330,7 +330,11 @@
                 color: $color-black;
                 font-style: normal;
                 font-weight: 400;
-                font-size: 18px;
+                font-size: 16px;
+            }
+
+            .description-4 {
+                font-size: 16px; 
             }
         }
         
@@ -389,7 +393,6 @@
     }
 }
 
-
 .email {
   border: none;
   width: auto;
@@ -423,9 +426,354 @@
         margin-top: 6px;
         width: 100%;
    }
-   
 }
 
+@media (max-width:980px){
+ 
+    .filters-menu {
+        
+        .filters {
+            
+            &__title {
+                font-size: 24px;
+                padding-left: 1.5rem;
+            }
+        }
 
+        .form {
+            padding-right: 1rem;
+            padding-left: 1rem;
+            font-size: 16px;
+        }
+    
+        .menu {
+            display: flex;
+            align-items: center;
+            gap:10px;
+        
+            &__description {
+                font-size: 12px;
+            }
+        }
+
+        .catalog-row {
+            padding: 1rem;  
+
+            .card__row {
+                margin-right: 1.6rem;
+            }
+            
+            .card .description__caps-bold {
+                font-size: 16px;
+            }
+
+            .card .description__caps {
+                font-size: 14px;
+            }
+
+            .card .description__link {
+                font-size: 16px;
+            }
+
+            .card__price2 {
+                font-size: 18px;
+            }
+
+            .card__price1 {
+                font-size: 18px;
+            }
+
+            .card__description {
+                font-size: 16px;
+                min-height: 40px;
+            }
+
+            .card__links {
+                gap:5px;
+            }
+
+            .card .lists-down {
+                font-size: 12px;
+            }
+        } 
+    }   
+
+    .page {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 58px;
+        gap: 10px;
+    }
+
+    .sliders {
+
+        &__title {
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+
+        .card-2 {
+            padding-top: 4.5rem;
+            padding-bottom: 2.5rem;
+    
+            &__row {
+                margin-top: 1rem;
+    
+                padding-bottom: 1rem;
+                margin-right: 1.5rem;
+        
+                max-width: 100%;
+                height: auto;
+            }
+            
+            &__image .image-2 {
+                margin: 1rem;
+            }
+    
+            &__description {
+                margin: .5rem 1rem;
+                height: 20%;
+                width: 20%;
+                text-align: left;
+                font-size: 14px;
+            }
+
+            .description-1  {
+                min-height: 73px;
+                font-size: 16px;
+            }
+
+            .description-2, 
+            .description-3 {
+                font-size: 16px;
+            }
+
+            .description-4 {
+                font-size: 16px; 
+            }
+    
+            &__price {
+                font-size: 16px;
+                min-width: 60px;
+                margin: .5rem 1rem;
+        }   }
+    } 
+  
+    .help {
+
+        &__card-row {
+            display: flex;
+            gap:40px;
+            align-items: flex-start;
+
+            margin: 1.5rem 2.5rem;
+        }
+
+        &__tel {
+            font-size: 12px;
+        }
+
+        &__description {
+            font-size: 12px;
+            margin-bottom: 2rem;
+        }
+        
+        &__btn-text {
+            font-size: 14px;
+        }
+    }
+
+    .email {
+        margin-top: -26px;
+
+        &__info label {
+                margin-bottom: 20px;
+        }
+        
+        &__info input {
+                padding: 16px;
+                margin-top: 6px;
+                width: 100%;
+        }
+        
+        label {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width:768px){
+
+    .filters-menu {
+        
+        .filters {
+            
+            &__title {
+                padding-left: 2.5rem;
+                font-size: 24px;
+            }
+        }
+
+        .form {
+            padding-right: 1rem;
+            padding-left: 1rem;
+            font-size: 14px;
+        }
+    
+        .menu {
+            gap:10px;
+        
+            &__description {
+                font-size: 14px;
+            }
+        }
+
+        .catalog-row {
+            padding: 1rem;  
+
+            .card__row {
+                margin-right: 1.6rem;
+            }
+            
+            .card .description__caps-bold {
+                font-size: 14px;
+            }
+
+            .card .description__caps {
+                font-size: 14px;
+            }
+
+            .card .description__link {
+                font-size: 14px;
+            }
+
+            .card__price2 {
+                font-size: 16px;
+            }
+
+            .card__price1 {
+                font-size: 16px;
+            }
+
+            .card__description {
+                font-size: 14px;
+                min-height: 40px;
+            }
+
+            .card__links {
+                gap:5px;
+            }
+        } 
+    }   
+
+    .lists-down {
+        font-size: 14px;
+    }
+
+    .page {
+        margin-left: 58px;
+        gap: 10px;
+    }
+
+    .sliders {
+
+        .container-1 {
+            max-width: 90.6%;
+            margin: 0 auto;
+        }    
+
+        &__title {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+
+        .card-2 {
+            padding-top: 4.5rem;
+            padding-bottom: 2.5rem;
+    
+            &__row {
+                margin-top: 1rem;
+    
+                padding-bottom: 1rem;
+                margin-right: 0.3rem;
+        
+                max-width: 100%;
+                height: auto;
+            }
+
+            .card-2__image .image-2 {
+                margin: 1rem;
+                width: 80%;
+            }
+        }
+
+        &__description {
+            margin: .5rem 1rem;
+            height: 15%;
+            width: 15%;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .description-1  {
+            min-height: 54px;
+            font-size: 14px;
+        }
+
+        .description-2, 
+        .description-3 {
+            font-size: 14px;
+        }
+
+        .description-4 {
+            font-size: 14px; 
+        }
+
+        &__price {
+            font-size: 16px;
+            min-width: 60px;
+            margin: .5rem 1rem;
+        }
+    } 
+
+    .help {
+
+        &__card-row {
+            gap:40px;
+            margin: 1.5rem 2.5rem;
+        }
+
+        &__tel {
+            font-size: 12px;
+        }
+
+        &__description {
+            font-size: 12px;
+            margin-bottom: 2rem;
+        }
+        
+        &__btn-text {
+            font-size: 14px;
+        }
+    }
+
+    .email {
+        margin-top: -26px;
+
+        &__info label {
+            margin-bottom: 20px;
+        }
+        
+        &__info input {
+            padding: 16px;
+            margin-top: 6px;
+            width: 100%;}
+        
+        label {
+            font-size: 12px;
+        }
+    }
+}
 
 
